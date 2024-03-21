@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* font colour */
+.body,
+html {
+  width: 100%;
+  height: 100%;
+  color: rgb(66, 66, 66);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav a {
+  float: left;
+  /* color: #f2f2f2; */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+.item1 {
+  grid-area: header;
+  background-image: url("https://images.pexels.com/photos/4877401/pexels-photo-4877401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 190px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 60px 40px;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+  width: 70%;
+  margin: 16px;
+  border: 2px solid #04aa6d;
+  padding: 26px;
+}
+.item5 {
+  grid-area: footer;
+}
+.report-box {
+  background-color: #04aa6d;
+  color: #fff;
+  padding: 26px 18px;
+}
+
+.form-heding {
+  margin-bottom: 16px;
+}
+input {
+  border: 1px solid #888;
+  border-radius: 2px;
+  /* width: 120px; */
+  /* height: 26px; */
+  margin-bottom: 26px;
+}
+label {
+  font-weight: 100px;
+  font: bolder;
+}
+#direction {
+  margin-bottom: 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main main right"
+    "menu footer footer footer footer footer";
+  gap: 10px;
+
+  padding: 10px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  width: 326px;
+  margin: 20px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 6px;
+  transform-origin: 0%;
+  /* position: static; */
+  display: inline-block;
+  border-radius: 5px;
+  vertical-align: top;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+.flex {
+  display: flex;
+  margin-bottom: 76px;
+  flex-wrap: wrap;
+}
+.card-text {
+  height: 240;
+  padding: 4px 30px 15px 30px;
+  text-transform: capitalize;
+}
+.card :hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.category {
+  color: blue;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+img {
+  width: 321px;
+  height: 264px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 2px 0px 0px 0px;
+}
+p {
+  padding: 16px;
+  margin-top: 10px;
+  color: rgb (63, 63, 63);
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  border: 1px solid gray;
+}
+.submit {
+  background-color: #a89696;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* input[type="text"] {
+  width: 260px;
+  height: 30px;
+} */
+
+.identify {
+  padding: 16px;
+}
+.identify h3 {
+  margin-bottom: 10px;
+}
+ul {
+  margin-bottom: 28px;
+}
+ul li {
+  color: green;
+  font-weight: bold;
+  list-style-type: square;
+  line-height: 1.5;
+}
+/* Table */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 12px;
+}
